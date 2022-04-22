@@ -60,10 +60,10 @@ typedef NS_ENUM(NSInteger, XYImgDirectionType){
     self.view.backgroundColor = [UIColor redColor];
     
     XYButton *button = [XYButton buttonWithTitle:@"click" imageName:@"apple-login" titleFontValue:14 weight:0.1 actionTarget:self action:@selector(handleAction) imageDirection:XYImgDirectionType_bottom];
-    button.frame = CGRectMake(100, 100, button.width, button.height);
+    button.frame = CGRectMake(100, 100, button.width, button.height); // 本button可以根据文字自适应长度、宽度，无需设置宽高，直接获取。
     button.bgColor = [UIColor cyanColor];
     button.titleColor = [UIColor blackColor];
-    button.space = 30;
+    button.space = 30; // 设置图片和title之间的间隔，默认为5，可以不设置。
     
     [self.view addSubview:button];
 }
