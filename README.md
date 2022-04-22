@@ -3,8 +3,8 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![podversion](https://img.shields.io/cocoapods/v/XYUIKit.svg)](https://cocoapods.org/pods/XYUIKit)
 
-swift 版本的有空再出...
-Encapsulate basic controls for quick and easy UI creation. Usually used in the project of the basic UI and tools, in order to facilitate their own and everyone, together to manage it... Join us! 👍👍👍
+* swift 版本的有空再出...
+* Encapsulate basic controls for quick and easy UI creation. Usually used in the project of the basic UI and tools, in order to facilitate their own and everyone, together to manage it... Join us! 👍👍👍
 
 /**
  图片在文字的位置
