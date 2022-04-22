@@ -1,6 +1,6 @@
-# XYUIKit
-You can easy to make UI, but  you maybe take some parameters...
-你可以很容易地做UI，但你可能需要一些参数…
+# XYUIKit for OC
+swift 版本的有空再出...
+Encapsulate basic controls for quick and easy UI creation. Usually used in the project of the basic UI and tools, in order to facilitate their own and everyone, together to manage it... Join us! 👍👍👍
 
 /**
  图片在文字的位置
