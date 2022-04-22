@@ -46,7 +46,6 @@ typedef NS_ENUM(NSInteger, XYImgDirectionType){
 
 @end
 ## <a id="How_to_use_XYUIKit"></a>How to use XYUIKit
-```objc
 * Installation with CocoaPods：`pod 'XYUIKit'`
 * Installation with [Carthage](https://github.com/Carthage/Carthage)：`github "CoderXXY/XYUIKit"`
 * Manual import：
