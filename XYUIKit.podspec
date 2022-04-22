@@ -32,9 +32,9 @@ TODO: You can easy to make UI, but you maybe take some parameters... 你可以�
 
   s.source_files = 'XYUIKit/Classes/*'
   
-  s.resource_bundles = {
-    'XYUIKit' => ['XYUIKit/Assets/*.png']
-  }
+  #s.resource_bundles = {
+  #  'XYUIKit' => ['XYUIKit/Assets/*.png']
+  #}
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
