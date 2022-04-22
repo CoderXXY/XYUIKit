@@ -43,9 +43,9 @@ typedef NS_ENUM(NSInteger, XYImgDirectionType){
 + (XYButton *) buttonWithTitle:(NSString *)title imageName:(NSString *)imageName actionTarget:(id)actionTarget action:(SEL)action imageDirection:(XYImgDirectionType)imageDirection;
 /** You will make a button which with the title and background image,title's font-value, font-weight and background image's location,these parameters just by yourself input. */
 + (XYButton *) buttonWithTitle:(NSString *)title imageName:(NSString *)imageName titleFontValue:(CGFloat)titleFontValue weight:(CGFloat)weight actionTarget:(id)actionTarget action:(SEL)action imageDirection:(XYImgDirectionType)imageDirection;
-
 @end
-# How to use XYUIKit
+```
+# <a id="How_to_use_XYUIKit"></a>How to use XYUIKit
 * Installation with CocoaPods：`pod 'XYUIKit'`
 * Installation with [Carthage](https://github.com/Carthage/Carthage)：`github "CoderXXY/XYUIKit"`
 * Manual import：
@@ -67,9 +67,8 @@ typedef NS_ENUM(NSInteger, XYImgDirectionType){
     
     [self.view addSubview:button];
 }
-```objc
 - (void)handleAction{
     
 }
-
+```
 
