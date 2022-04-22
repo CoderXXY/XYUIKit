@@ -45,7 +45,7 @@ typedef NS_ENUM(NSInteger, XYImgDirectionType){
 + (XYButton *) buttonWithTitle:(NSString *)title imageName:(NSString *)imageName titleFontValue:(CGFloat)titleFontValue weight:(CGFloat)weight actionTarget:(id)actionTarget action:(SEL)action imageDirection:(XYImgDirectionType)imageDirection;
 
 @end
-## <a id="How_to_use_XYUIKit"></a>How to use XYUIKit
+# How to use XYUIKit
 * Installation with CocoaPods：`pod 'XYUIKit'`
 * Installation with [Carthage](https://github.com/Carthage/Carthage)：`github "CoderXXY/XYUIKit"`
 * Manual import：
