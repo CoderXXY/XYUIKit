@@ -5,7 +5,7 @@
 
 * swift 版本的有空再出...
 * Encapsulate basic controls for quick and easy UI creation. Usually used in the project of the basic UI and tools, in order to facilitate their own and everyone, together to manage it... Join us! 👍👍👍
-
+```objc
 /**
  图片在文字的位置
  */
@@ -45,8 +45,15 @@ typedef NS_ENUM(NSInteger, XYImgDirectionType){
 + (XYButton *) buttonWithTitle:(NSString *)title imageName:(NSString *)imageName titleFontValue:(CGFloat)titleFontValue weight:(CGFloat)weight actionTarget:(id)actionTarget action:(SEL)action imageDirection:(XYImgDirectionType)imageDirection;
 
 @end
-
-简单实用如下：
+## <a id="How_to_use_XYUIKit"></a>How to use XYUIKit
+```objc
+* Installation with CocoaPods：`pod 'XYUIKit'`
+* Installation with [Carthage](https://github.com/Carthage/Carthage)：`github "CoderXXY/XYUIKit"`
+* Manual import：
+    * Drag All files in the `XYUIKit` folder to project
+    * Import the main file：`#import "XYUIKit.h"`
+    * like as :
+    ```objc
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -61,7 +68,7 @@ typedef NS_ENUM(NSInteger, XYImgDirectionType){
     
     [self.view addSubview:button];
 }
-
+```objc
 - (void)handleAction{
     
 }
