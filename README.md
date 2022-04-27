@@ -3,7 +3,6 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![podversion](https://img.shields.io/cocoapods/v/XYUIKit.svg)](https://cocoapods.org/pods/XYUIKit)
 
-* swift 版本的有空再出...
 * Encapsulate basic controls for quick and easy UI creation. Usually used in the project of the basic UI and tools, in order to facilitate their own and everyone, together to manage it... Join us! 👍👍👍
 ```objc
 /**
@@ -59,16 +58,57 @@ typedef NS_ENUM(NSInteger, XYImgDirectionType){
 	// Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor redColor];
     
-    XYButton *button = [XYButton buttonWithTitle:@"click" imageName:@"apple-login" titleFontValue:14 weight:0.1 actionTarget:self action:@selector(handleAction) imageDirection:XYImgDirectionType_bottom];
-    button.frame = CGRectMake(100, 100, button.width, button.height); // 本button可以根据文字自适应长度、宽度，无需设置宽高，直接获取。
-    button.bgColor = [UIColor cyanColor];
-    button.titleColor = [UIColor blackColor];
-    button.space = 30; // 设置图片和title之间的间隔，默认为5，可以不设置。
+    XYButton *bottomImgButton = [XYButton buttonWithTitle:@"bottomImgButton" imageName:@"apple-login" titleFontValue:14 weight:0.1 actionTarget:self action:@selector(handleAction) imageDirection:XYImgDirectionType_bottom];
+    bottomImgButton.frame = CGRectMake(10, 100, bottomImgButton.width, bottomImgButton.height);
+    bottomImgButton.bgColor = [UIColor cyanColor];
+    bottomImgButton.titleColor = [UIColor blackColor];
+    bottomImgButton.space = 30;
+    [self.view addSubview:bottomImgButton];
     
-    [self.view addSubview:button];
+    XYButton *leftImgButton = [XYButton buttonWithTitle:@"click" imageName:@"apple-login" titleFontValue:14 weight:0.1 actionTarget:self action:@selector(handleAction) imageDirection:XYImgDirectionType_bottom];
+    leftImgButton.frame = CGRectMake(CGRectGetMaxX(bottomImgButton.frame)+10, 100, leftImgButton.width, leftImgButton.height);
+    leftImgButton.bgColor = [UIColor cyanColor];
+    leftImgButton.titleColor = [UIColor blackColor];
+    leftImgButton.space = 30;
+    [self.view addSubview:leftImgButton];
+    
+    XYButton *rightImgButton = [XYButton buttonWithTitle:@"rightImgButton" imageName:@"apple-login" titleFontValue:14 weight:0.1 actionTarget:self action:@selector(handleAction) imageDirection:XYImgDirectionType_bottom];
+    rightImgButton.frame = CGRectMake(CGRectGetMaxX(leftImgButton.frame)+10, 100, rightImgButton.width, rightImgButton.height);
+    rightImgButton.bgColor = [UIColor cyanColor];
+    rightImgButton.titleColor = [UIColor blackColor];
+    rightImgButton.space = 30;
+    [self.view addSubview:rightImgButton];
+    
+    XYButton *topImgButton = [XYButton buttonWithTitle:@"click" imageName:@"apple-login" titleFontValue:14 weight:0.1 actionTarget:self action:@selector(handleAction) imageDirection:XYImgDirectionType_bottom];
+    topImgButton.frame = CGRectMake(CGRectGetMaxX(rightImgButton.frame)+10, 100, topImgButton.width, topImgButton.height);
+    topImgButton.bgColor = [UIColor cyanColor];
+    topImgButton.titleColor = [UIColor blackColor];
+    topImgButton.space = 30;
+    [self.view addSubview:topImgButton];
+    
 }
+
 - (void)handleAction{
     
 }
 ```
+![271651072036_ pic](https://user-images.githubusercontent.com/16486815/165550962-71d4f6d5-99bf-4038-884a-03c0cabeb5a5.jpg)
+
+
+## Installation
+
+XYUIKit is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'XYUIKit'
+```
+
+## Author
+
+coderXXY, coderxxy@163.com
+
+## License
+
+XYUIKit is available under the MIT license. See the LICENSE file for more info.
 
