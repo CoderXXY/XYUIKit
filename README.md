@@ -52,48 +52,41 @@ typedef NS_ENUM(NSInteger, XYImgDirectionType){
     * Import the main file：`#import "XYUIKit.h"`
     * like as :
 ```objc
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    self.view.backgroundColor = [UIColor redColor];
-    
+- (void)buttonHandle{
     XYButton *bottomImgButton = [XYButton buttonWithTitle:@"bottomImgButton" imageName:@"apple-login" titleFontValue:14 weight:0.1 actionTarget:self action:@selector(handleAction) imageDirection:XYImgDirectionType_bottom];
     bottomImgButton.frame = CGRectMake(10, 100, bottomImgButton.width, bottomImgButton.height);
     bottomImgButton.bgColor = [UIColor cyanColor];
     bottomImgButton.titleColor = [UIColor blackColor];
-    bottomImgButton.space = 30;
+    bottomImgButton.space = 5;
     [self.view addSubview:bottomImgButton];
     
-    XYButton *leftImgButton = [XYButton buttonWithTitle:@"click" imageName:@"apple-login" titleFontValue:14 weight:0.1 actionTarget:self action:@selector(handleAction) imageDirection:XYImgDirectionType_bottom];
+    XYButton *leftImgButton = [XYButton buttonWithTitle:@"click" imageName:@"apple-login" titleFontValue:14 weight:0.1 actionTarget:self action:@selector(handleAction) imageDirection:XYImgDirectionType_left];
     leftImgButton.frame = CGRectMake(CGRectGetMaxX(bottomImgButton.frame)+10, 100, leftImgButton.width, leftImgButton.height);
     leftImgButton.bgColor = [UIColor cyanColor];
     leftImgButton.titleColor = [UIColor blackColor];
-    leftImgButton.space = 30;
+    leftImgButton.space = 5;
     [self.view addSubview:leftImgButton];
     
-    XYButton *rightImgButton = [XYButton buttonWithTitle:@"rightImgButton" imageName:@"apple-login" titleFontValue:14 weight:0.1 actionTarget:self action:@selector(handleAction) imageDirection:XYImgDirectionType_bottom];
+    XYButton *rightImgButton = [XYButton buttonWithTitle:@"rightImgButton" imageName:@"apple-login" titleFontValue:14 weight:0.1 actionTarget:self action:@selector(handleAction) imageDirection:XYImgDirectionType_right];
     rightImgButton.frame = CGRectMake(CGRectGetMaxX(leftImgButton.frame)+10, 100, rightImgButton.width, rightImgButton.height);
     rightImgButton.bgColor = [UIColor cyanColor];
     rightImgButton.titleColor = [UIColor blackColor];
-    rightImgButton.space = 30;
+    rightImgButton.space = 5;
     [self.view addSubview:rightImgButton];
     
-    XYButton *topImgButton = [XYButton buttonWithTitle:@"click" imageName:@"apple-login" titleFontValue:14 weight:0.1 actionTarget:self action:@selector(handleAction) imageDirection:XYImgDirectionType_bottom];
+    XYButton *topImgButton = [XYButton buttonWithTitle:@"click" imageName:@"apple-login" titleFontValue:14 weight:0.1 actionTarget:self action:@selector(handleAction) imageDirection:XYImgDirectionType_top];
     topImgButton.frame = CGRectMake(CGRectGetMaxX(rightImgButton.frame)+10, 100, topImgButton.width, topImgButton.height);
     topImgButton.bgColor = [UIColor cyanColor];
     topImgButton.titleColor = [UIColor blackColor];
-    topImgButton.space = 30;
+    topImgButton.space = 5;
     [self.view addSubview:topImgButton];
-    
 }
 
 - (void)handleAction{
     
 }
 ```
-![271651072036_ pic](https://user-images.githubusercontent.com/16486815/165550962-71d4f6d5-99bf-4038-884a-03c0cabeb5a5.jpg)
-
+![281651118335_ pic](https://user-images.githubusercontent.com/16486815/165673653-78de835a-16b4-44a7-9111-dad6f4e60297.jpg)
 
 ## Installation
 
