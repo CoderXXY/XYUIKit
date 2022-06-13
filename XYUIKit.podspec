@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XYUIKit'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'You can easy to make UI, but you maybe take some parameters...'
 
 # This description is used to generate tags and improve search results.
@@ -31,6 +31,8 @@ TODO: You can easy to make UI, but you maybe take some parameters... 你可以�
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'XYUIKit/Classes/*'
+  s.requires_arc = true
+
   
   #s.resource_bundles = {
   #  'XYUIKit' => ['XYUIKit/Assets/*.png']
