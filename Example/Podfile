@@ -4,13 +4,10 @@ platform :ios, '9.0'
 
 target 'XYUIKit_Example' do
   pod 'XYUIKit', :path => '../'
-
+  pod 'Masonry'
+  
   target 'XYUIKit_Tests' do
     inherit! :search_paths
-
-    pod 'Specta'
-    pod 'Expecta'
-    pod 'FBSnapshotTestCase'
-    pod 'Expecta+Snapshots'
+    
   end
 end

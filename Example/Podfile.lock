@@ -1,0 +1,23 @@
+PODS:
+  - Masonry (1.1.0)
+  - XYUIKit (0.0.2)
+
+DEPENDENCIES:
+  - Masonry
+  - XYUIKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+
+EXTERNAL SOURCES:
+  XYUIKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  XYUIKit: f93b96cae7ba5633fc55b2761a550b232ded249e
+
+PODFILE CHECKSUM: 9ee644b277c05e157c8f97b5411536296adcd6be
+
+COCOAPODS: 1.11.2

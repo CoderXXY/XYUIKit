@@ -67,7 +67,7 @@ const CGFloat leading = 5.0;
         
         self.title = title;
         self.imageName = imageName;
-        self.
+        self.weight = weight;
         self.directionType = imageDirection;
         self.space = 5.0;   // default is 5.0
         self.titleFontValue = titleFontValue;
@@ -244,7 +244,7 @@ const CGFloat leading = 5.0;
 #pragma mark - lazy UI method
 - (UILabel *)titLab{
     if (!_titLab) {
-        _titLab = [[UILabel alloc] initWithFrame:CGRectZero];
+        _titLab = [[UILabel alloc] init];
         _titLab.textAlignment = NSTextAlignmentCenter;
     }
     return _titLab;
